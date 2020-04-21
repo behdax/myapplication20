@@ -17,7 +17,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/welcome_screen_bg" />
+        app:srcCompat="@drawable/welcome_screen_bg"
+        android:contentDescription="@string/background_image" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -29,14 +30,15 @@
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/swoosh_logo" />
+        app:srcCompat="@drawable/swoosh_logo"
+        android:contentDescription="@string/app_logo" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="GO ALL IN"
+        android:text="@string/go_all_in"
         android:textColor="#FFFFFF"
         android:textSize="45sp"
         android:textStyle="bold"
@@ -50,7 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="ON GOING ALL OUT"
+        android:text="@string/on_going_all_out"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,7 +64,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Find A Team In Your City  dominate"
+        android:text="@string/find_a_team_in_your_city_dominate"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,7 +76,7 @@
         android:layout_width="96dp"
         android:layout_height="19dp"
         android:layout_marginTop="16dp"
-        android:text="The League"
+        android:text="@string/the_league"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,13 +85,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/getstartedbutton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:background="@drawable/swoosh_button"
         android:fadeScrollbars="true"
-        android:text="get started"
+        android:text="@string/get_started"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"

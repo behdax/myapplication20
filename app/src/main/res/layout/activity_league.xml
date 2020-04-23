@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Leagueactivity">
+    tools:context="controller.Leagueactivity">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -46,6 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <LinearLayout
+        android:id="@+id/togglez"
         android:layout_width="397dp"
         android:layout_height="196dp"
         android:layout_marginBottom="32dp"
@@ -57,10 +58,11 @@
         app:layout_constraintVertical_bias="0.18">
 
         <ToggleButton
-            android:id="@+id/toggleButton14"
+            android:id="@+id/mens"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/swoosh_toggle"
+            android:onClick="onmens"
             android:text="@string/mens"
             android:textColor="#FFFFFF"
             android:textOff="@string/mens"
@@ -69,12 +71,13 @@
             android:textStyle="bold" />
 
         <ToggleButton
-            android:id="@+id/toggleButton15"
+            android:id="@+id/womens"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginBottom="24dp"
             android:background="@drawable/swoosh_toggle"
+            android:onClick="onwomens"
             android:text="@string/womens"
             android:textColor="#FFFFFF"
             android:textOff="@string/womens"
@@ -85,10 +88,11 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ToggleButton
-            android:id="@+id/toggleButton16"
+            android:id="@+id/coeds"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/swoosh_toggle"
+            android:onClick="oncoeds"
             android:text="@string/co_ed"
             android:textColor="#FFFFFF"
             android:textOff="@string/co_ed"
